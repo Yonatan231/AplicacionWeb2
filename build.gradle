@@ -11,6 +11,7 @@ description = 'este es un codigo de notas'
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
+
 	}
 }
 
@@ -25,7 +26,9 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.mysql:mysql-connector-j:8.4.0'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
